@@ -77,6 +77,8 @@ def prepare_chemical_data():
     chemical_data = chemical_data.sort_values(by="Sample ID")
     chemical_data = chemical_data.replace(",", ".", regex=True)
     chemical_data = chemical_data.apply(pd.to_numeric)
+    chemical_data.columns = [column.split(
+        " ")[0] for column in chemical_data.columns.values]
     return chemical_data
 
 
