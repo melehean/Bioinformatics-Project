@@ -64,14 +64,14 @@ def random_forest_importance(chemical_data, bacteria_data):
     importances = rfpimp.importances(forest, chemical_data, bacteria_data, features=features)
     return importances, forest
 
-def model_leave_one_out(model, X, y):
-    scores = cross_val_score(model, X, y, cv=KFold(n_splits=5, shuffle=True, random_state=42))
-    min_score, min_index = min(scores), np.argmin(scores)
-    avg_score = np.mean(scores)
-    print("Crossvalidation_results ...")
-    print("Min score {}".format(min_score))
-    print("Average score {}".format(avg_score))
-    return scores
+# def model_leave_one_out(model, X, y):
+#     scores = cross_val_score(model, X, y, cv=KFold(n_splits=5, shuffle=True, random_state=42))
+#     min_score, min_index = min(scores), np.argmin(scores)
+#     avg_score = np.mean(scores)
+#     print("Crossvalidation_results ...")
+#     print("Min score {}".format(min_score))
+#     print("Average score {}".format(avg_score))
+#     return scores
 
 def get_results_for_all_bacteria(chemical_data, all_bacteria_data, function):
     all_metric_value = []
