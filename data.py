@@ -1,6 +1,65 @@
 import constants
 
 import pandas as pd
+import seaborn as sns
+import numpy as np
+from copy import deepcopy
+
+
+def draw_chemical_correlation_matrix(chemical_data):
+    corr = chemical_data.corr()
+    sns.heatmap(corr, mask=np.zeros_like(corr, dtype=np.bool),
+                cmap=sns.diverging_palette(220, 10, as_cmap=True),
+                square=True)
+
+
+def group_correlated_features(chemical_data, abs_threshold=0.5):
+    features_corr = chemical_data.corr()
+    mask = features_corr.abs() > abs_threshold
+    groups = []
+    for column in mask.columns:
+        correlated_items = [column]
+        correlated_with_any = False
+        group_existent = False
+        for items in mask[column].items():
+            if items[0] == column:
+                continue
+            elif items[1] == True:
+                correlated_items.append(items[0])
+                correlated_with_any = True
+        group_existent = set(correlated_items) in [
+            set(group) for group in groups]
+        if correlated_with_any and not group_existent:
+            groups.append(correlated_items)
+    return groups
+
+
+def redefine_features(features, groups):
+    final_groups = deepcopy(groups)
+    for feature in features:
+        if not any(feature in group for group in groups):
+            final_groups.append(feature)
+    return final_groups
+
+
+def redefine_features_with_indices(chemical_data, groups):
+    features = chemical_data.columns.to_list()
+
+    indices_group = deepcopy(groups)
+    for array_index, feature_array in enumerate(groups):
+        for index, feature in enumerate(feature_array):
+            indices_group[array_index][index] = features.index(feature)
+
+    final_indices_group = deepcopy(indices_group)
+    for index, _ in enumerate(features):
+        flag = False
+        for group in indices_group:
+            if index in group:
+                flag = True
+                break
+        if not flag:
+            final_indices_group.append(index)
+    return final_indices_group
 
 
 def prepare_chemical_data():
