@@ -4,6 +4,8 @@
 Data was collected in 8 different places (near lakes) in Norwegia. 
 It was collected over 2 years, in summer and winter seasons (June and September). 
 
+Combined abundance - zliczenie ilości występowanie danej bakteri wykrytej we wszystkich pomiarach (suma ze wszystkich pomiarów)
+
 Exemplary data mark: 
 R 1 06_17
 
