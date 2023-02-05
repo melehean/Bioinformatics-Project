@@ -92,3 +92,15 @@ def prepare_type_data():
     type_data = type_data.reindex(sorted(type_data.columns), axis=1)
     type_data = type_data.apply(pd.to_numeric)
     return type_data
+
+
+def prepare_row_data():    
+    row_data = pd.read_csv(constants.ROW_DATA_PATH)
+    row_data = row_data.dropna(axis=1)
+    row_data = row_data.drop(columns=["Combined Abundance"])
+    row_data.columns = row_data.columns.str.replace("R ", "R")
+    row_data.columns = row_data.columns.str.strip()
+    row_data.columns = row_data.columns.str.replace(" ", "_")
+    row_data = row_data.reindex(sorted(row_data.columns), axis=1)
+    row_data = row_data.apply(pd.to_numeric)
+    return row_data

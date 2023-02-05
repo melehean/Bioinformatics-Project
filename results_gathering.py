@@ -93,7 +93,7 @@ def prepare_final_results(
         bacteria_index = row["Bacteria"]
         bacteria_row = bacteria_data.iloc[bacteria_index]
         chemical_list_string = row["Chemicals"]
-        proper_chemical_list = chemical_list_string.strip('][').split(', ')
+        proper_chemical_list = chemical_list_string.strip('][').replace('\'', '').split(', ')
         chemical_data_for_bacteria = chemical_data[proper_chemical_list]
         correlations.append(
             chemical_data_for_bacteria.corrwith(bacteria_row).values[0])
