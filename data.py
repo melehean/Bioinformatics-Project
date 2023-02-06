@@ -104,3 +104,15 @@ def prepare_row_data():
     row_data = row_data.reindex(sorted(row_data.columns), axis=1)
     row_data = row_data.apply(pd.to_numeric)
     return row_data
+    
+    
+def prepare_species_data():
+    species_data = pd.read_csv(constants.SPECIES_DATA_PATH)
+    species_data = species_data.dropna(axis=1)
+    species_data = species_data.drop(columns=["Combined Abundance"])
+    species_data.columns = species_data.columns.str.replace("R ", "R")
+    species_data.columns = species_data.columns.str.strip()
+    species_data.columns = species_data.columns.str.replace(" ", "_")
+    species_data = species_data.reindex(sorted(species_data.columns), axis=1)
+    species_data = species_data.apply(pd.to_numeric)
+    return species_data
