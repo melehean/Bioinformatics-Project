@@ -39,6 +39,7 @@ def get_xgboost_importance(chemical_data, chemical_groups, bacteria_data):
         n_estimators=400,
         max_depth=2,
         eta=0.1,
+        n_jobs=4,
         random_state=constants.SEED)
 
     xgboost_object.fit(chemical_data, bacteria_data)
@@ -83,8 +84,9 @@ def get_random_forest_importance(chemical_data, chemical_groups, bacteria_data):
         seed=constants.SEED)
 
     r_squared = random_forest_object.score(chemical_data, bacteria_data)
-    cv_score = cross_val_score(
-        random_forest_object, chemical_data, bacteria_data)
-    cv_score = np.mean(cv_score)
+    # cv_score = cross_val_score(
+    #     random_forest_object, chemical_data, bacteria_data)
+    # cv_score = np.mean(cv_score)
+    oob_score = random_forest_object.oob_score_
 
-    return importances, r_squared, cv_score
+    return importances, r_squared, oob_score

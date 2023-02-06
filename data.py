@@ -109,7 +109,7 @@ def prepare_row_data():
 def prepare_class_data():
     class_data = pd.read_csv(constants.CLASS_DATA_PATH)
     class_data = class_data.dropna(axis=1)
-    class_data = class_data.sort_values("Combined Abundance", ascending=False)
+    class_data = class_data[class_data["Combined Abundance"] > 40]
     class_data = class_data.drop(columns=["Combined Abundance"])
     class_data.columns = class_data.columns.str.replace("R ", "R")
     class_data.columns = class_data.columns.str.strip()
@@ -117,6 +117,18 @@ def prepare_class_data():
     class_data = class_data.reindex(sorted(class_data.columns), axis=1)
     class_data = class_data.apply(pd.to_numeric)
     return class_data
+
+def prepare_genra_data():
+    genra_data = pd.read_csv(constants.GENRA_DATA_PATH)
+    genra_data = genra_data.dropna(axis=1)
+    genra_data = genra_data[genra_data["Combined Abundance"] > 40]
+    genra_data = genra_data.drop(columns=["Combined Abundance"])
+    genra_data.columns = genra_data.columns.str.replace("R ", "R")
+    genra_data.columns = genra_data.columns.str.strip()
+    genra_data.columns = genra_data.columns.str.replace(" ", "_")
+    genra_data = genra_data.reindex(sorted(genra_data.columns), axis=1)
+    genra_data = genra_data.apply(pd.to_numeric)
+    return genra_data
     
 def prepare_species_data():
     species_data = pd.read_csv(constants.SPECIES_DATA_PATH)
