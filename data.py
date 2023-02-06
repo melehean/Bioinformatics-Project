@@ -104,3 +104,15 @@ def prepare_row_data():
     row_data = row_data.reindex(sorted(row_data.columns), axis=1)
     row_data = row_data.apply(pd.to_numeric)
     return row_data
+
+def prepare_class_data():
+    class_data = pd.read_csv(constants.CLASS_DATA_PATH)
+    class_data = class_data.dropna(axis=1)
+    class_data = class_data.sort_values("Combined Abundance", ascending=False)
+    class_data = class_data.drop(columns=["Combined Abundance"])
+    class_data.columns = class_data.columns.str.replace("R ", "R")
+    class_data.columns = class_data.columns.str.strip()
+    class_data.columns = class_data.columns.str.replace(" ", "_")
+    class_data = class_data.reindex(sorted(class_data.columns), axis=1)
+    class_data = class_data.apply(pd.to_numeric)
+    return class_data

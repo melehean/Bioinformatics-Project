@@ -10,3 +10,8 @@ CHEMICAL_DATA_PATH = MAIN_DATA_PATH / \
 TYPE_DATA_PATH = MAIN_DATA_PATH / "merged_all_POP_ETI_typ.csv"
 
 ROW_DATA_PATH = MAIN_DATA_PATH / "merged_all_POP_ETI_rzad.csv"
+
+CLASS_DATA_PATH = MAIN_DATA_PATH / "merged_all_POP_ETI_klasa.csv"
+
+
+GENRA_DATA_PATH = MAIN_DATA_PATH / "merged_all_POP_ETI_rodzaj.csv"
