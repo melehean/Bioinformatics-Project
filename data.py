@@ -128,3 +128,23 @@ def prepare_species_data():
     species_data = species_data.reindex(sorted(species_data.columns), axis=1)
     species_data = species_data.apply(pd.to_numeric)
     return species_data
+
+def prepare_family_data(drop_unknown_families=False):
+    family_data = pd.read_csv(constants.FAMILY_DATA_PATH)
+    #print(family_data.columns)
+    if drop_unknown_families:
+        family_data = family_data[family_data['Family (Aggregated)'].str.contains('Unknown') == False]
+    names = family_data.iloc[:, 0]
+    #print(names)
+    family_data = family_data.dropna(axis=1)
+
+    #family_data=family_data.drop(family_data.columns[2], axis=1)
+    family_data = family_data.sort_values("Combined Abundance", ascending=False)
+    family_data = family_data.drop(columns=["Combined Abundance"])
+    family_data.columns = family_data.columns.str.replace("R ", "R")
+    family_data.columns = family_data.columns.str.strip()
+    family_data.columns = family_data.columns.str.replace(" ", "_")
+
+    family_data = family_data.reindex(sorted(family_data.columns), axis=1)
+    family_data = family_data.apply(pd.to_numeric)
+    return family_data,names
