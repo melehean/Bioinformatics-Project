@@ -24,7 +24,7 @@ def get_metrics_for_all_bacteria(chemical_data, chemical_groups, all_bacteria_da
             function, chemical_data, chemical_groups, row)
         importances, r_squared, cv_score = function_with_args()
 
-        all_metrics.append((importances, r_squared, cv_score))
+        all_metrics.append((importances[0], r_squared, cv_score))
     return all_metrics
 
 
@@ -44,7 +44,7 @@ def important_relationships_for_all_bacteria(chemical_data, all_bacteria_data, f
     R2_scores = []
     for i, (importances, score, cv_score) in enumerate(all_metrics):
         important_relationships = find_important_relationships(
-            importances[0], features_with_names, importance_threshold)
+            importances, features_with_names, importance_threshold)
         for relationship in important_relationships:
             chemicals.append(relationship[0])
             all_importances.append(relationship[1])
@@ -101,3 +101,9 @@ def prepare_final_results(
     df_merged["Correlation"] = correlations
     df_merged = df_merged.iloc[:, [0, 1, 2, 12, 3, 4, 5, 6, 7, 8, 9, 10, 11]]
     return df_merged
+
+def name_lookup(indices, indices_names_dict):
+    names = []
+    for index in indices:
+        names.append(indices_names_dict[index])
+    return names

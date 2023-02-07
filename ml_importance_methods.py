@@ -5,6 +5,8 @@ from sklearn import tree
 from xgboost import XGBRegressor
 from mlxtend.evaluate import feature_importance_permutation
 from sklearn.model_selection import cross_val_score
+from sklearn.linear_model import LinearRegression
+from sklearn.preprocessing import StandardScaler
 import numpy as np
 
 
@@ -30,7 +32,6 @@ def get_decision_tree_importance(chemical_data, chemical_groups, bacteria_data):
     cv_score = cross_val_score(
         decision_tree_object, chemical_data, bacteria_data)
     cv_score = np.mean(cv_score, axis=0)
-
     return importances, r_squared, cv_score
 
 
@@ -90,3 +91,14 @@ def get_random_forest_importance(chemical_data, chemical_groups, bacteria_data):
     oob_score = random_forest_object.oob_score_
 
     return importances, r_squared, oob_score
+
+def get_linear_regression_importance(chemical_data, chemical_groups, bacteria_data):
+    scaler = StandardScaler()
+    scaler.fit(chemical_data)
+    chemical_data = scaler.transform(chemical_data)
+    print(chemical_data)
+    model = LinearRegression()
+    model.fit(chemical_data, bacteria_data)
+    importances = model.coef_
+
+    return (importances, "None"), None, None

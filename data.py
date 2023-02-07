@@ -4,7 +4,7 @@ import pandas as pd
 import seaborn as sns
 import numpy as np
 from copy import deepcopy
-
+from IPython.display import display
 
 def draw_chemical_correlation_matrix(chemical_data):
     corr = chemical_data.corr()
@@ -108,27 +108,33 @@ def prepare_row_data():
 
 def prepare_class_data():
     class_data = pd.read_csv(constants.CLASS_DATA_PATH)
-    class_data = class_data.dropna(axis=1)
     class_data = class_data[class_data["Combined Abundance"] > 40]
+    indices_to_names = {}
+    for i, name in enumerate(class_data['Class (Aggregated)']):
+        indices_to_names[i] = name 
+    class_data = class_data.dropna(axis=1)
     class_data = class_data.drop(columns=["Combined Abundance"])
     class_data.columns = class_data.columns.str.replace("R ", "R")
     class_data.columns = class_data.columns.str.strip()
     class_data.columns = class_data.columns.str.replace(" ", "_")
     class_data = class_data.reindex(sorted(class_data.columns), axis=1)
     class_data = class_data.apply(pd.to_numeric)
-    return class_data
+    return class_data, indices_to_names
 
-def prepare_genra_data():
-    genra_data = pd.read_csv(constants.GENRA_DATA_PATH)
-    genra_data = genra_data.dropna(axis=1)
-    genra_data = genra_data[genra_data["Combined Abundance"] > 40]
-    genra_data = genra_data.drop(columns=["Combined Abundance"])
-    genra_data.columns = genra_data.columns.str.replace("R ", "R")
-    genra_data.columns = genra_data.columns.str.strip()
-    genra_data.columns = genra_data.columns.str.replace(" ", "_")
-    genra_data = genra_data.reindex(sorted(genra_data.columns), axis=1)
-    genra_data = genra_data.apply(pd.to_numeric)
-    return genra_data
+def prepare_genus_data():
+    genus_data = pd.read_csv(constants.GENUS_DATA_PATH)
+    genus_data = genus_data[genus_data["Combined Abundance"] > 40]
+    indices_to_names = {}
+    for i, name in enumerate(genus_data['Genus (Aggregated)']):
+        indices_to_names[i] = name 
+    genus_data = genus_data.dropna(axis=1)
+    genus_data = genus_data.drop(columns=["Combined Abundance"])
+    genus_data.columns = genus_data.columns.str.replace("R ", "R")
+    genus_data.columns = genus_data.columns.str.strip()
+    genus_data.columns = genus_data.columns.str.replace(" ", "_")
+    genus_data = genus_data.reindex(sorted(genus_data.columns), axis=1)
+    genus_data = genus_data.apply(pd.to_numeric)
+    return genus_data, indices_to_names
     
 def prepare_species_data():
     species_data = pd.read_csv(constants.SPECIES_DATA_PATH)

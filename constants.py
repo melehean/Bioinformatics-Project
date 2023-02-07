@@ -16,6 +16,6 @@ SPECIES_DATA_PATH = MAIN_DATA_PATH / "merged_all_POP_ETI_rzad_gatunek.csv"
 CLASS_DATA_PATH = MAIN_DATA_PATH / "merged_all_POP_ETI_klasa.csv"
 
 
-GENRA_DATA_PATH = MAIN_DATA_PATH / "merged_all_POP_ETI_rodzaj.csv"
+GENUS_DATA_PATH = MAIN_DATA_PATH / "merged_all_POP_ETI_rodzaj.csv"
 
 FAMILY_DATA_PATH = MAIN_DATA_PATH / "merged_all_POP_ETI_family.csv"
