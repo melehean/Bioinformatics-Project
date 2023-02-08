@@ -114,7 +114,7 @@ def prepare_row_data():
 
 def prepare_class_data():
     class_data = pd.read_csv(constants.CLASS_DATA_PATH)
-    class_data = class_data[class_data["Combined Abundance"] > 40]
+    #class_data = class_data[class_data["Combined Abundance"] > 40]
     indices_to_names = {}
     for i, name in enumerate(class_data['Class (Aggregated)']):
         indices_to_names[i] = name 
@@ -129,7 +129,7 @@ def prepare_class_data():
 
 def prepare_genus_data():
     genus_data = pd.read_csv(constants.GENUS_DATA_PATH)
-    genus_data = genus_data[genus_data["Combined Abundance"] > 40]
+    #genus_data = genus_data[genus_data["Combined Abundance"] > 40]
     indices_to_names = {}
     for i, name in enumerate(genus_data['Genus (Aggregated)']):
         indices_to_names[i] = name 
