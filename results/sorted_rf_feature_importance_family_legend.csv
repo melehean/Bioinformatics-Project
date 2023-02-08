@@ -1,0 +1,479 @@
+,Family (Aggregated)
+0,{Unknown Family} WCHD3-30
+1,{Unknown Family} YLA114
+2,Cenarchaeaceae
+3,{Unknown Phylum} Bacteria-1
+4,{Unknown Phylum} Bacteria-2
+5,Deinococcaceae
+6,{Unknown Class} AC1
+7,{Unknown Order} HDBW-WB69
+8,{Unknown Class} Acidobacteria
+9,{Unknown Family} 11-24
+10,{Unknown Family} PK29
+11,{Unknown Family} RB41
+12,Ellin6075
+13,{Unknown Order} Acidobacteria-5
+14,{Unknown Order} Acidobacteria-6
+15,{Unknown Family} CCU21
+16,{Unknown Family} iii1-15
+17,mb2424
+18,RB40
+19,Acidobacteriaceae
+20,Koribacteraceae
+21,{Unknown Order} AT-s54
+22,{Unknown Order} BPC102
+23,Holophagaceae
+24,{Unknown Family} 32-20
+25,{Unknown Family} DS-18
+26,{Unknown Family} SJA-36
+27,{Unknown Order} PAUC37f
+28,{Unknown Order} RB25
+29,{Unknown Family} JH-WHS99
+30,{Unknown Family} Solibacterales
+31,[Bryobacteraceae]
+32,AKIW659
+33,Solibacteraceae
+34,{Unknown Family} Sva0725
+35,{Unknown Class} Actinobacteria
+36,{Unknown Family} Acidimicrobiales
+37,Acidimicrobiaceae
+38,AKIW874
+39,C111
+40,EB1017
+41,Iamiaceae
+42,Microthrixaceae
+43,{Unknown Order} Actinobacteria
+44,{Unknown Family} Actinomycetales
+45,ACK-M1
+46,Actinomycetaceae
+47,Cellulomonadaceae
+48,Corynebacteriaceae
+49,Frankiaceae
+50,Gordoniaceae
+51,Intrasporangiaceae
+52,Kineosporiaceae
+53,Microbacteriaceae
+54,Micrococcaceae
+55,Micromonosporaceae
+56,Mycobacteriaceae
+57,Nocardiaceae
+58,Nocardioidaceae
+59,Propionibacteriaceae
+60,Pseudonocardiaceae
+61,Rarobacteraceae
+62,Streptomycetaceae
+63,Bifidobacteriaceae
+64,At425_EubF1
+65,Coriobacteriaceae
+66,{Unknown Order} MB-A2-108
+67,{Unknown Family} 0319-7L14
+68,{Unknown Order} OPB41
+69,{Unknown Order} Thermoleophilia
+70,{Unknown Family} Gaiellales
+71,AK1AB1_02E
+72,Gaiellaceae
+73,{Unknown Family} Solirubrobacterales
+74,Patulibacteraceae
+75,Solirubrobacteraceae
+76,{Unknown Class} AD3
+77,{Unknown Order} ABS-6
+78,{Unknown Order} JG37-AG-4
+79,{Unknown Class} Armatimonadetes
+80,{Unknown Order} 0319-6E2
+81,[Fimbriimonadaceae]
+82,Armatimonadaceae
+83,Chthonomonadaceae
+84,{Unknown Family} SJA-22
+85,{Unknown Order} OPB50
+86,{Unknown Order} SHA-37
+87,{Unknown Family} GAB-B06
+88,{Unknown Family} RB046
+89,Rhodothermaceae
+90,{Unknown Family} [Saprospirales]
+91,Chitinophagaceae
+92,Saprospiraceae
+93,{Unknown Family} Bacteroidales
+94,[Paraprevotellaceae]
+95,Bacteroidaceae
+96,Porphyromonadaceae
+97,Prevotellaceae
+98,Rikenellaceae
+99,{Unknown Order} BME43
+100,{Unknown Family} Cytophagales
+101,Cyclobacteriaceae
+102,Cytophagaceae
+103,Flammeovirgaceae
+104,{Unknown Family} Flavobacteriales
+105,[Weeksellaceae]
+106,Cryomorphaceae
+107,Flavobacteriaceae
+108,{Unknown Family} Sphingobacteriales
+109,Sphingobacteriaceae
+110,{Unknown Order} VC2_1_Bac22
+111,{Unknown Class} BHI80-139
+112,{Unknown Order} PRR-11
+113,{Unknown Order} WCHB1-03
+114,{Unknown Family} Caldithrixales
+115,{Unknown Order} Chlamydiia
+116,{Unknown Family} Chlamydiales
+117,Chlamydiaceae
+118,Criblamydiaceae
+119,Parachlamydiaceae
+120,Rhabdochlamydiaceae
+121,Simkaniaceae
+122,Waddliaceae
+123,{Unknown Class} Chlorobi
+124,{Unknown Family} C20
+125,[Melioribacteraceae]
+126,{Unknown Order} OPB56
+127,{Unknown Order} SJA-28
+128,{Unknown Class} Chloroflexi
+129,{Unknown Order} Anaerolineae
+130,S47
+131,Anaerolinaceae
+132,Caldilineaceae
+133,{Unknown Family} envOPS12
+134,{Unknown Family} H39
+135,{Unknown Family} S0208
+136,A4b
+137,{Unknown Family} SHA-20
+138,{Unknown Family} SJA-15
+139,{Unknown Family} WCHB1-50
+140,{Unknown Order} C0119
+141,{Unknown Family} [Roseiflexales]
+142,[Kouleothrixaceae]
+143,{Unknown Family} AKIW781
+144,Chloroflexaceae
+145,{Unknown Family} Herpetosiphonales
+146,{Unknown Family} Dehalococcoidales
+147,Dehalococcoidaceae
+148,{Unknown Family} GIF9
+149,{Unknown Order} Ellin6529
+150,{Unknown Order} Gitt-GS-136
+151,Thermogemmatisporaceae
+152,{Unknown Order} P2-11E
+153,{Unknown Order} S085
+154,{Unknown Order} SAR202
+155,{Unknown Order} SHA-26
+156,{Unknown Order} SL56
+157,{Unknown Family} AKYG1722
+158,{Unknown Family} JG30-KF-CM45
+159,{Unknown Order} TK10
+160,5B-12
+161,Dolo_23
+162,{Unknown Family} B07_WMSP1
+163,{Unknown Order} TK17
+164,{Unknown Family} mle1-48
+165,{Unknown Class} Cyanobacteria
+166,{Unknown Order} 4C0d-2
+167,{Unknown Family} MLE1-12
+168,{Unknown Family} SM1D11
+169,{Unknown Family} SM2F09
+170,{Unknown Family} YS2
+171,{Unknown Order} Chloroplast
+172,{Unknown Family} Chlorophyta
+173,Chlamydomonadaceae
+174,Trebouxiophyceae
+175,Ulvophyceae
+176,{Unknown Family} Cryptophyta
+177,{Unknown Family} Euglenozoa
+178,{Unknown Family} Haptophyceae
+179,{Unknown Family} Stramenopiles
+180,{Unknown Family} Streptophyta
+181,Gloeobacteraceae
+182,{Unknown Order} ML635J-21
+183,Nostocaceae
+184,Rivulariaceae
+185,Chroococcaceae
+186,Cyanobacteriaceae
+187,Gomphosphaeriaceae
+188,Microcystaceae
+189,Phormidiaceae
+190,{Unknown Family} Pseudanabaenales
+191,Pseudanabaenaceae
+192,Acaryochloridaceae
+193,Chamaesiphonaceae
+194,Synechococcaceae
+195,{Unknown Class} Elusimicrobia
+196,{Unknown Family} Elusimicrobiales
+197,{Unknown Family} FAC88
+198,{Unknown Family} IIb
+199,{Unknown Family} MVP-88
+200,{Unknown Order} Endomicrobia
+201,{Unknown Class} FBP
+202,{Unknown Class} FCPU426
+203,{Unknown Family} 258ds10
+204,Fibrobacteraceae
+205,{Unknown Family} Ucp1540
+206,{Unknown Family} Bacillales
+207,[Exiguobacteraceae]
+208,Bacillaceae
+209,Paenibacillaceae
+210,Staphylococcaceae
+211,{Unknown Family} Gemellales
+212,{Unknown Family} Lactobacillales
+213,Carnobacteriaceae
+214,Lactobacillaceae
+215,Leuconostocaceae
+216,Streptococcaceae
+217,Turicibacteraceae
+218,{Unknown Family} Clostridiales
+219,[Acidaminobacteraceae]
+220,[Mogibacteriaceae]
+221,[Tissierellaceae]
+222,Christensenellaceae
+223,Clostridiaceae
+224,Dehalobacteriaceae
+225,Eubacteriaceae
+226,Gracilibacteraceae
+227,Lachnospiraceae
+228,Peptococcaceae
+229,Ruminococcaceae
+230,Veillonellaceae
+231,{Unknown Family} Natranaerobiales
+232,Thermodesulfobiaceae
+233,Erysipelotrichaceae
+234,{Unknown Class} GAL15
+235,{Unknown Order} Gemm-1
+236,{Unknown Order} Gemm-2
+237,{Unknown Order} Gemm-5
+238,{Unknown Order} Gemmatimonadetes
+239,{Unknown Family} Ellin5290
+240,{Unknown Family} Gemmatimonadales
+241,A1-B1
+242,Ellin5301
+243,Gemmatimonadaceae
+244,{Unknown Family} KD8-87
+245,{Unknown Family} N1423WL
+246,{Unknown Class} GN02
+247,{Unknown Order} 3BR-5F
+248,{Unknown Order} BB34
+249,{Unknown Order} BD1-5
+250,{Unknown Order} GKS2-174
+251,{Unknown Order} GN07
+252,{Unknown Order} GN10
+253,{Unknown Order} IIB17
+254,{Unknown Class} Kazan-3B-28
+255,{Unknown Class} LD1
+256,Arctic95B-10
+257,Lentisphaeraceae
+258,Victivallaceae
+259,{Unknown Family} Z20
+260,{Unknown Class} MVP-21
+261,{Unknown Family} Nitrospirales
+262,0319-6A21
+263,[Leptospirillaceae]
+264,[Thermodesulfovibrionaceae]
+265,Nitrospiraceae
+266,{Unknown Class} NKB19
+267,{Unknown Order} TSBW08
+268,{Unknown Class} OD1
+269,{Unknown Order} ABY1
+270,{Unknown Order} Mb-NB09
+271,{Unknown Order} SM2F11
+272,{Unknown Order} ZB2
+273,{Unknown Class} OP11
+274,{Unknown Order} OP11-1
+275,{Unknown Order} OP11-2
+276,{Unknown Family} WCHB1-07
+277,{Unknown Order} OP11-3
+278,{Unknown Order} OP11-4
+279,{Unknown Order} WCHB1-64
+280,{Unknown Family} d153
+281,{Unknown Family} K2-4-19
+282,{Unknown Class} OP3
+283,{Unknown Order} BD4-9
+284,{Unknown Order} koll11
+285,{Unknown Family} GIF10
+286,kpj58rc
+287,{Unknown Order} PBS-25
+288,{Unknown Order} OP8_1
+289,{Unknown Order} OP8_2
+290,{Unknown Family} SB-45
+291,{Unknown Class} Planctomycetes
+292,{Unknown Order} 028H05-P-BN-P5
+293,Brocadiaceae
+294,{Unknown Order} BD7-11
+295,{Unknown Family} d113
+296,{Unknown Family} MVS-107
+297,{Unknown Family} agg27
+298,{Unknown Family} CL500-15
+299,{Unknown Family} AKAU3564
+300,{Unknown Family} CCM11a
+301,{Unknown Family} CPla-3
+302,{Unknown Family} Phycisphaerales
+303,Phycisphaeraceae
+304,{Unknown Family} S-70
+305,{Unknown Family} WD2101
+306,{Unknown Order} Pla4
+307,Gemmataceae
+308,Isosphaeraceae
+309,Pirellulaceae
+310,Planctomycetaceae
+311,{Unknown Family} DH61
+312,{Unknown Family} p04_C01
+313,{Unknown Family} PHOS-HE93
+314,{Unknown Class} Proteobacteria
+315,{Unknown Order} Alphaproteobacteria
+316,{Unknown Family} BD7-3
+317,{Unknown Family} Caulobacterales
+318,Caulobacteraceae
+319,{Unknown Family} Ellin329
+320,Kiloniellaceae
+321,{Unknown Family} Rhizobiales
+322,Aurantimonadaceae
+323,Beijerinckiaceae
+324,Bradyrhizobiaceae
+325,Brucellaceae
+326,Hyphomicrobiaceae
+327,Methylobacteriaceae
+328,Methylocystaceae
+329,Phyllobacteriaceae
+330,Rhizobiaceae
+331,Xanthobacteraceae
+332,Hyphomonadaceae
+333,Rhodobacteraceae
+334,{Unknown Family} Rhodospirillales
+335,Acetobacteraceae
+336,Rhodospirillaceae
+337,{Unknown Family} Rickettsiales
+338,mitochondria
+339,Pelagibacteraceae
+340,Rickettsiaceae
+341,{Unknown Family} Sphingomonadales
+342,Erythrobacteraceae
+343,Sphingomonadaceae
+344,{Unknown Order} Betaproteobacteria
+345,{Unknown Family} A21b
+346,UD5
+347,{Unknown Family} Burkholderiales
+348,Alcaligenaceae
+349,Burkholderiaceae
+350,Comamonadaceae
+351,Oxalobacteraceae
+352,{Unknown Family} Ellin6067
+353,Gallionellaceae
+354,Hydrogenophilaceae
+355,{Unknown Family} IS-44
+356,{Unknown Family} Methylophilales
+357,Methylophilaceae
+358,{Unknown Family} MKC10
+359,{Unknown Family} MND1
+360,Neisseriaceae
+361,Nitrosomonadaceae
+362,Procabacteriaceae
+363,Rhodocyclaceae
+364,{Unknown Family} SBla14
+365,{Unknown Family} SC-I-84
+366,{Unknown Family} Thiobacterales
+367,{Unknown Order} Deltaproteobacteria
+368,{Unknown Family} [Entotheonellales]
+369,{Unknown Family} AF420338
+370,Bacteriovoracaceae
+371,Bdellovibrionaceae
+372,{Unknown Family} BPC076
+373,Desulfobacteraceae
+374,Desulfobulbaceae
+375,Desulfovibrionaceae
+376,Geobacteraceae
+377,{Unknown Family} FAC87
+378,{Unknown Family} MBNT15
+379,{Unknown Family} MIZ46
+380,{Unknown Family} Myxococcales
+381,0319-6G20
+382,Cystobacterineae
+383,Haliangiaceae
+384,Myxococcaceae
+385,Nannocystaceae
+386,OM27
+387,{Unknown Family} NB1-j
+388,{Unknown Family} NKB15
+389,{Unknown Family} PB19
+390,{Unknown Family} Spirobacillales
+391,Syntrophaceae
+392,Syntrophobacteraceae
+393,Campylobacteraceae
+394,Helicobacteraceae
+395,{Unknown Order} Gammaproteobacteria
+396,{Unknown Family} 34P16
+397,{Unknown Family} Acidithiobacillales
+398,Succinivibrionaceae
+399,125ds10
+400,211ds20
+401,Alteromonadaceae
+402,HTCC2188
+403,Psychromonadaceae
+404,{Unknown Family} Chromatiales
+405,Ectothiorhodospiraceae
+406,Enterobacteriaceae
+407,{Unknown Family} Legionellales
+408,Coxiellaceae
+409,Endoecteinascidiaceae
+410,Legionellaceae
+411,{Unknown Family} Methylococcales
+412,Crenotrichaceae
+413,Methylococcaceae
+414,{Unknown Family} Oceanospirillales
+415,Saccharospirillaceae
+416,Pasteurellaceae
+417,Moraxellaceae
+418,Pseudomonadaceae
+419,{Unknown Family} Thiohalorhabdales
+420,Piscirickettsiaceae
+421,Thiotrichaceae
+422,Sinobacteraceae
+423,Xanthomonadaceae
+424,{Unknown Family} CV90
+425,{Unknown Family} PHOS-HD29
+426,Brachyspiraceae
+427,Leptospiraceae
+428,{Unknown Class} SR1
+429,{Unknown Order} Mollicutes
+430,Mycoplasmataceae
+431,{Unknown Family} RF39
+432,{Unknown Order} F38
+433,{Unknown Order} SBRH58
+434,{Unknown Order} SJA-4
+435,{Unknown Family} S1198
+436,{Unknown Family} YJF2-48
+437,{Unknown Class} TM7
+438,{Unknown Order} MJK10
+439,{Unknown Order} SC3
+440,{Unknown Order} TM7-1
+441,{Unknown Order} TM7-3
+442,{Unknown Family} Blgi18
+443,{Unknown Family} CW040
+444,{Unknown Family} EW055
+445,{Unknown Family} I025
+446,Rs-045
+447,{Unknown Class} Verrucomicrobia
+448,{Unknown Family} Methylacidiphilales
+449,LD19
+450,{Unknown Family} S-BQ2-57
+451,{Unknown Order} [Pedosphaerae]
+452,{Unknown Family} [Pedosphaerales]
+453,auto67_4W
+454,Ellin517
+455,OPB35
+456,R4-41B
+457,[Chthoniobacteraceae]
+458,{Unknown Order} Opitutae
+459,[Cerasicoccaceae]
+460,Opitutaceae
+461,Puniceicoccaceae
+462,{Unknown Family} LD1-PB3
+463,{Unknown Family} WCHB1-41
+464,Verrucomicrobiaceae
+465,{Unknown Class} WPS-2
+466,{Unknown Order} SHA-109
+467,{Unknown Family} Sediment-1
+468,PRR-10
+469,{Unknown Class} WS4
+470,{Unknown Class} WS5
+471,{Unknown Class} WS6
+472,{Unknown Order} B142
+473,{Unknown Order} SC72
+474,{Unknown Family} WCHB1-15
+475,{Unknown Class} ZB3
+476,{Unknown Order} BS119
+477,
