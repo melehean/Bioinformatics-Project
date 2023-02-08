@@ -145,7 +145,7 @@ def prepare_genus_data():
 def prepare_species_data():
     species_data = pd.read_csv(constants.SPECIES_DATA_PATH)
     indices_to_names = {}
-    for i, name in enumerate(species_data['Phylum (Aggregated)']):
+    for i, name in enumerate(species_data['Species (Aggregated)']):
         indices_to_names[i] = name 
     species_data = species_data.dropna(axis=1)
     species_data = species_data.drop(columns=["Combined Abundance"])
