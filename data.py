@@ -84,6 +84,9 @@ def prepare_chemical_data():
 
 def prepare_type_data():
     type_data = pd.read_csv(constants.TYPE_DATA_PATH)
+    indices_to_names = {}
+    for i, name in enumerate(type_data['Phylum (Aggregated)']):
+        indices_to_names[i] = name 
     type_data = type_data.dropna(axis=1)
     type_data = type_data.drop(columns=["Combined Abundance"])
     type_data.columns = type_data.columns.str.replace("R ", "R")
@@ -91,11 +94,14 @@ def prepare_type_data():
     type_data.columns = type_data.columns.str.replace(" ", "_")
     type_data = type_data.reindex(sorted(type_data.columns), axis=1)
     type_data = type_data.apply(pd.to_numeric)
-    return type_data
+    return type_data, indices_to_names
 
 
 def prepare_row_data():    
     row_data = pd.read_csv(constants.ROW_DATA_PATH)
+    indices_to_names = {}
+    for i, name in enumerate(row_data['Order (Aggregated)']):
+        indices_to_names[i] = name 
     row_data = row_data.dropna(axis=1)
     row_data = row_data.drop(columns=["Combined Abundance"])
     row_data.columns = row_data.columns.str.replace("R ", "R")
@@ -103,7 +109,7 @@ def prepare_row_data():
     row_data.columns = row_data.columns.str.replace(" ", "_")
     row_data = row_data.reindex(sorted(row_data.columns), axis=1)
     row_data = row_data.apply(pd.to_numeric)
-    return row_data
+    return row_data, indices_to_names
     
 
 def prepare_class_data():
@@ -138,6 +144,9 @@ def prepare_genus_data():
     
 def prepare_species_data():
     species_data = pd.read_csv(constants.SPECIES_DATA_PATH)
+    indices_to_names = {}
+    for i, name in enumerate(species_data['Phylum (Aggregated)']):
+        indices_to_names[i] = name 
     species_data = species_data.dropna(axis=1)
     species_data = species_data.drop(columns=["Combined Abundance"])
     species_data.columns = species_data.columns.str.replace("R ", "R")
@@ -145,7 +154,7 @@ def prepare_species_data():
     species_data.columns = species_data.columns.str.replace(" ", "_")
     species_data = species_data.reindex(sorted(species_data.columns), axis=1)
     species_data = species_data.apply(pd.to_numeric)
-    return species_data
+    return species_data, indices_to_names
 
 def prepare_family_data(drop_unknown_families=False):
     family_data = pd.read_csv(constants.FAMILY_DATA_PATH)
@@ -154,6 +163,9 @@ def prepare_family_data(drop_unknown_families=False):
         family_data = family_data[family_data['Family (Aggregated)'].str.contains('Unknown') == False]
     names = family_data.iloc[:, 0]
     #print(names)
+    indices_to_names = {}
+    for i, name in enumerate(family_data['Family (Aggregated)']):
+        indices_to_names[i] = name 
     family_data = family_data.dropna(axis=1)
 
     #family_data=family_data.drop(family_data.columns[2], axis=1)
@@ -165,4 +177,4 @@ def prepare_family_data(drop_unknown_families=False):
 
     family_data = family_data.reindex(sorted(family_data.columns), axis=1)
     family_data = family_data.apply(pd.to_numeric)
-    return family_data,names
+    return family_data,names, indices_to_names
